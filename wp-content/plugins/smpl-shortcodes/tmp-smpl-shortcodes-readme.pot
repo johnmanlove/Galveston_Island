@@ -1,0 +1,134 @@
+msgid ""
+msgstr "MIME-Version: 1.0\n"
+
+#. Name.
+msgid "Simple Shortcodes"
+msgstr ""
+
+#. Short description.
+msgid "Simple Shortcodes is a plugin that fits nicely in your editor toolbar for simple insertion of various commonly used shortcodes."
+msgstr ""
+
+#. Screenshot description.
+msgid "Editor Toolbar Button and Flyout"
+msgstr ""
+
+#. Screenshot description.
+msgid "Alert Notifications"
+msgstr ""
+
+#. Screenshot description.
+msgid "Toggle Panels"
+msgstr ""
+
+#. Screenshot description.
+msgid "Tab Panels"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "This plugin works with any theme, but was made specifically to work with themes from <a href=\"http://www.simplethemes.com/\">simplethemes.com</a>. Simple Shortcodes adds a button to your editor toolbar for quick and easy insertion of the most commonly used shortcodes for columns, buttons, toggles, tabs, callout boxes, notifications, and more."
+msgstr ""
+
+#. Found in installation list item.
+msgid "Upload the smpl-shortcodes folder and its contents to the <code>/wp-content/plugins/</code> directory"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Activate the plugin through the 'Plugins' menu in WordPress"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Visit Settings -&gt; Writing for advanced configuration."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "fixed issue with sixth column class"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "fixed issue with fifth column class"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "fixed issue with double ellipsis in latest shortcode"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "fixed issue with some themes showing double more-links in latest shortcode"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Button Classes: pill, rr, lr, nomargin"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed malformed tag in latest shortcode"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "added thumb width options to latest shortcode"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "added date options to latest shortcode"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added open=true to toggle shortcodes"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added class parameter to toggle shortcodes"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "fixed W3C validation error"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added support for multiple tab groups"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added light variations of buttons"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed button alignment issue"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated for TinyMCE 4.x"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated for WordPress 3.9"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added compatibility layer"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Minor bug fixes"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "JS improvements"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed callout shortcode modal"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed blockquote shortcode"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added support for legacy shortcodes"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Initial Release"
+msgstr ""

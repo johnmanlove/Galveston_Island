@@ -1,0 +1,197 @@
+/*
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+GENERAL STYLES
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+*/
+* {
+  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif !important;
+  box-sizing: border-box; }
+
+body #wrap #content:after, body #wrap .instagram-icon:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #E5DBB9;
+  font-weight: 300; }
+
+h3 {
+  font-size: 1.3em; }
+
+body {
+  background-color: #E5DBB9;
+  background-image: radial-gradient(closest-side, transparent 98%, #e1d5ae 99%), radial-gradient(closest-side, transparent 98%, #e1d5ae 99%);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px;
+  background-repeat: repeat; }
+  body #wrap {
+    position: relative; }
+    body #wrap #header {
+      margin-top: 0; }
+      body #wrap #header .inner {
+        padding: 0; }
+        body #wrap #header .inner .logotype-img {
+          position: absolute;
+          left: 345px;
+          top: 0;
+          z-index: 1000; }
+    body #wrap #navigation {
+      background: url("/Galveston_Island/wp-content/uploads/2016/01/bgd_header.png") 0 0 no-repeat;
+      background-color: transparent;
+      margin-bottom: 0;
+      min-height: 71px;
+      z-index: 900; }
+      body #wrap #navigation ul {
+        background: transparent;
+        background-color: transparent;
+        border: 0 none;
+        border-radius: 0;
+        box-shadow: none;
+        width: 50%; }
+        body #wrap #navigation ul#menu-tertiary {
+          padding-left: 140px; }
+        body #wrap #navigation ul li {
+          background: none;
+          border: 0 none; }
+          body #wrap #navigation ul li a {
+            border: 0 none;
+            color: #E5DBB9;
+            font-weight: normal;
+            padding: 20px 10px 10px;
+            text-shadow: none;
+            transition: all .2s; }
+            body #wrap #navigation ul li a:hover, body #wrap #navigation ul li a:focus, body #wrap #navigation ul li a:active {
+              background: transparent;
+              color: #998339; }
+              body #wrap #navigation ul li a:hover::before, body #wrap #navigation ul li a:focus::before, body #wrap #navigation ul li a:active::before {
+                color: #E5DBB9; }
+            body #wrap #navigation ul li a::before {
+              content: '|';
+              padding-right: 20px; }
+          body #wrap #navigation ul li:hover a, body #wrap #navigation ul li.active a {
+            background: transparent;
+            color: #998339; }
+            body #wrap #navigation ul li:hover a::before, body #wrap #navigation ul li.active a::before {
+              color: #E5DBB9; }
+          body #wrap #navigation ul li:first-child a::before {
+            content: ''; }
+          body #wrap #navigation ul li .sub-menu li a {
+            background-color: #fefefe;
+            color: #8D242C;
+            display: block;
+            height: auto;
+            line-height: 2em;
+            padding: 10px 20px;
+            text-transform: uppercase; }
+            body #wrap #navigation ul li .sub-menu li a:hover {
+              background-color: #8D242C;
+              color: #E5DBB9; }
+            body #wrap #navigation ul li .sub-menu li a::before {
+              content: ''; }
+    body #wrap #content {
+      margin-top: -15px; }
+      body #wrap #content #page_banner {
+        min-height: 262px;
+        padding: 100px 250px 0; }
+        body #wrap #content #page_banner h3 {
+          margin-bottom: 20px;
+          text-shadow: 1px 1px #8D242C; }
+        body #wrap #content #page_banner.home {
+          background: url("/Galveston_Island/wp-content/uploads/2016/01/banner_home.jpg") 0 0 no-repeat; }
+      body #wrap #content .blends {
+        background: url("/Galveston_Island/wp-content/uploads/2016/01/bgd_blends.png") 0 0 no-repeat;
+        margin-top: -20px; }
+        body #wrap #content .blends .one_fourth h3,
+        body #wrap #content .blends .one_fourth a.learn {
+          font-weight: 600;
+          text-decoration: none;
+          text-transform: uppercase; }
+        body #wrap #content .blends .one_fourth .learn {
+          border: 1px solid;
+          padding: 10px 15px;
+          transition: all .3s; }
+          body #wrap #content .blends .one_fourth .learn:hover {
+            background-color: #E5DBB9; }
+        body #wrap #content .blends .one_fourth a {
+          display: inline-block; }
+        body #wrap #content .blends .one_fourth p a {
+          text-decoration: none; }
+        body #wrap #content .blends .one_fourth.island h3, body #wrap #content .blends .one_fourth.island a {
+          border-color: #1b1464;
+          color: #1b1464; }
+        body #wrap #content .blends .one_fourth.island .learn:hover {
+          background-color: #1b1464;
+          color: white; }
+        body #wrap #content .blends .one_fourth.palace h3, body #wrap #content .blends .one_fourth.palace a {
+          border-color: #8b6239;
+          color: #8b6239; }
+        body #wrap #content .blends .one_fourth.palace .learn:hover {
+          background-color: #8b6239;
+          color: white; }
+        body #wrap #content .blends .one_fourth.mardisgras h3, body #wrap #content .blends .one_fourth.mardisgras a {
+          border-color: #552d6d;
+          color: #552d6d; }
+        body #wrap #content .blends .one_fourth.mardisgras .learn:hover {
+          background-color: #552d6d;
+          color: white; }
+        body #wrap #content .blends .one_fourth.dickens h3, body #wrap #content .blends .one_fourth.dickens a {
+          border-color: #8e0509;
+          color: #8e0509; }
+        body #wrap #content .blends .one_fourth.dickens .learn:hover {
+          background-color: #8e0509;
+          color: white; }
+      body #wrap #content .rev_slider_wrapper .rev-btn {
+        background-color: transparent !important;
+        border: 1px solid #E5DBB9 !important;
+        font-weight: 900 !important;
+        transition: all .3s !important; }
+        body #wrap #content .rev_slider_wrapper .rev-btn:hover {
+          background-color: #E5DBB9 !important; }
+      body #wrap #content .rev_slider_wrapper .coffee-bag {
+        width: 230px; }
+    body #wrap #nav-below {
+      display: none; }
+    body #wrap .instagram-icon {
+      padding: 0px 10px;
+      margin-bottom: -10px; }
+    body #wrap #sb_instagram {
+      background-color: #E5DBB9;
+      margin-bottom: 0;
+      padding-bottom: 0 !important; }
+  body #footer {
+    background: url("/Galveston_Island/wp-content/uploads/2016/01/bgd_footer.jpg") 0 0 no-repeat;
+    border-top: 0 none;
+    margin: 0 10px;
+    padding: 50px 30px 0; }
+    body #footer h3,
+    body #footer p,
+    body #footer a {
+      color: #E5DBB9; }
+    body #footer h3 {
+      font-size: 1em;
+      text-transform: uppercase; }
+    body #footer p {
+      line-height: 1.2em; }
+    body #footer a {
+      text-decoration: none; }
+    body #footer li a {
+      background: none;
+      border-bottom: 0 none;
+      padding: 0; }
+    body #footer .left,
+    body #footer .right {
+      color: #E5DBB9; }
+    body #footer .right {
+      font-size: .7em;
+      line-height: 1em; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+/*# sourceMappingURL=custom.css.map */

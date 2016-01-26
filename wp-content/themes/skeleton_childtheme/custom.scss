@@ -1,0 +1,368 @@
+//SASS VARIABLES & MIXINS
+
+$main-color: #E5DBB9;
+$red-color: #8D242C;
+$island-blend: #1b1464;
+$palace-blend: #8b6239;
+$mardisgras-blend: #552d6d;
+$dickens-blend: #8e0509;
+
+$primary-font: Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif;
+
+
+@mixin background($year, $month, $img-name, $img-type, $pos-x, $pos-y, $repeat) {
+	background: url('/Galveston_Island/wp-content/uploads/' + $year + '/' + $month + '/' + $img-name + '.' + $img-type + '') $pos-x $pos-y $repeat;
+}
+
+@mixin blend-color($color) {
+	h3, a {
+		border-color: $color;
+		color: $color;
+	}
+}
+
+@mixin bgd-color($color) {
+	background-color: $color;
+	color: white;
+}
+
+/*
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+GENERAL STYLES
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+*/
+
+* {
+	font-family: $primary-font !important;
+	box-sizing: border-box;
+}
+
+%clearfix {
+   &:after {
+      content: '';
+      display: table;
+      clear: both;
+   }
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $main-color;
+	font-weight: 300;
+}
+
+h1 {}
+
+h2 {}
+
+h3 {
+	font-size: 1.3em;
+}
+
+h4 {}
+
+h5 {}
+
+h6 {}
+
+body {
+	background-color: $main-color;
+	background-image: radial-gradient(closest-side, transparent 98%, darken($main-color, 3%) 99%),
+	radial-gradient(closest-side, transparent 98%, darken($main-color, 3%) 99%);
+	background-size:80px 80px;
+	background-position:0 0, 40px 40px;
+	background-repeat: repeat;
+	//@extend %clearfix;
+
+	#wrap {
+		position: relative;
+
+		#header {
+			margin-top: 0;
+			
+			.inner {
+				padding: 0;
+
+				.logotype-img {
+					position: absolute;
+					left: 345px;
+					top: 0;
+					z-index: 1000;
+				}
+			}
+		}
+
+		#navigation {
+			@include background(2016, '01', bgd_header, png, 0, 0, no-repeat);
+			background-color: transparent;
+			margin-bottom: 0;
+			min-height: 71px;
+			z-index: 900;
+
+			ul {
+				background: transparent;
+				background-color: transparent;
+				border: 0 none;
+				border-radius: 0;
+				box-shadow: none;
+				width: 50%;
+
+				&#menu-tertiary {
+					padding-left: 140px;
+				}
+
+				li {
+					background: none;
+					border: 0 none;
+
+					a {
+						border: 0 none;
+						color: $main-color;
+						font-weight: normal;
+						padding: 20px 10px 10px;
+						text-shadow: none;
+						transition: all .2s;
+
+						&:hover, 
+						&:focus,
+						&:active {
+							background: transparent;
+							color: darken($main-color, 40%);
+
+							&::before {
+								color: $main-color;
+							}
+						}
+
+						&::before {
+							content: '|';
+							padding-right: 20px;
+						}
+					}
+
+					&:hover,
+					&.active {
+
+						a {
+							background: transparent;
+							color: darken($main-color, 40%);
+
+							&::before {
+								color: $main-color;
+							}
+						}
+					}
+
+					&:first-child {
+
+						a {
+
+							&::before {
+								content: '';
+							}
+						}
+					}
+
+					.sub-menu {
+
+						li {
+
+							a {
+								background-color: #fefefe;
+								color: $red-color;
+								display: block;
+								height: auto;
+								line-height: 2em;
+								padding: 10px 20px;
+								text-transform: uppercase;
+
+								&:hover {
+									background-color: $red-color;
+									color: $main-color;
+								}
+
+								&::before {
+									content: '';
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		#content {
+			margin-top: -15px;
+			@extend %clearfix;
+
+			#page_banner {
+				min-height: 262px;
+				padding: 100px 250px 0;
+
+				h3 {
+					margin-bottom: 20px;
+					text-shadow: 1px 1px $red-color;
+				}
+
+				&.home {
+					@include background(2016, '01', banner_home, jpg, 0, 0, no-repeat);
+				}			
+			}
+
+			.blends {
+				@include background(2016, '01', bgd_blends, png, 0, 0, no-repeat);
+				margin-top: -20px;
+
+				.one_fourth {
+
+					h3, 
+					a.learn {
+						font-weight: 600;
+						text-decoration: none;
+						text-transform: uppercase;
+					}
+
+					.learn {
+						border: 1px solid;
+						padding: 10px 15px;
+						transition: all .3s;
+
+						&:hover {
+							background-color: $main-color;
+						}
+					}
+
+					a {
+						display: inline-block;
+					}
+
+					p {
+
+						a {
+							text-decoration: none;
+						}
+					}
+
+					&.island {
+						@include blend-color($island-blend);
+
+						.learn:hover {
+							@include bgd-color($island-blend);
+						}
+					}
+
+					&.palace {
+						@include blend-color($palace-blend);
+
+						.learn:hover {
+							@include bgd-color($palace-blend);
+						}
+					}
+
+					&.mardisgras {
+						@include blend-color($mardisgras-blend);
+
+						.learn:hover {
+							@include bgd-color($mardisgras-blend);
+						}
+					}
+					&.dickens {
+						@include blend-color($dickens-blend);
+
+						.learn:hover {
+							@include bgd-color($dickens-blend);
+						}
+					}
+				}
+			}
+
+			.rev_slider_wrapper {
+
+				.rev-btn {
+					background-color: transparent !important;
+					border: 1px solid $main-color !important;
+					font-weight: 900 !important;
+					transition: all .3s !important;
+
+					&:hover {
+						background-color: $main-color !important;
+					}
+				}
+
+				.coffee-bag {
+					width: 230px;
+				}
+			}
+		}
+
+		#nav-below {
+			display: none;
+		}
+
+		.instagram-icon {
+			padding: 0px 10px;
+			@extend %clearfix;
+			margin-bottom: -10px;
+		}
+
+		#sb_instagram {
+			background-color: $main-color;
+			margin-bottom: 0;
+			padding-bottom: 0 !important;
+		}
+	}
+
+	#footer {
+		@include background(2016, '01', bgd_footer, jpg, 0, 0, no-repeat);
+		border-top: 0 none;
+		margin: 0 10px;
+		padding: 50px 30px 0;
+
+		h3,
+		p,
+		a {
+			color: $main-color;
+		}
+
+		h3 {
+			font-size: 1em;
+			text-transform: uppercase;
+		}
+
+		p {
+			line-height: 1.2em;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		li  { 
+
+			a {
+				background: none;
+				border-bottom: 0 none;
+				padding: 0;
+			}
+		}
+
+		.left,
+		.right {
+			color: $main-color;
+		}
+
+		.right {
+			font-size: .7em;
+			line-height: 1em;
+		}
+	}
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
