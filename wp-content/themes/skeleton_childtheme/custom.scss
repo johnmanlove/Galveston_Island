@@ -52,7 +52,9 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 300;
 }
 
-h1 {}
+h1 {
+	font-size: 4em;
+}
 
 h2 {}
 
@@ -67,13 +69,15 @@ h5 {}
 h6 {}
 
 body {
-	background-color: $main-color;
-	background-image: radial-gradient(closest-side, transparent 98%, darken($main-color, 3%) 99%),
-	radial-gradient(closest-side, transparent 98%, darken($main-color, 3%) 99%);
-	background-size:80px 80px;
-	background-position:0 0, 40px 40px;
-	background-repeat: repeat;
+	background-image: none;
 	//@extend %clearfix;
+
+	&.page-template-onecolumn-page {
+
+		#page_banner {
+			margin-bottom: 40px;
+		}
+	}
 
 	#wrap {
 		position: relative;
@@ -196,6 +200,14 @@ body {
 			margin-top: -15px;
 			@extend %clearfix;
 
+			.entry-title {
+				display: none;
+			}
+
+			.entry-content {
+				background-color: $main-color;
+			}
+
 			#page_banner {
 				min-height: 262px;
 				padding: 100px 250px 0;
@@ -207,7 +219,15 @@ body {
 
 				&.home {
 					@include background(2016, '01', banner_home, jpg, 0, 0, no-repeat);
-				}			
+				}
+
+				&.history {
+					@include background(2016, '01', banner_history, jpg, 0, 0, no-repeat);
+				}
+
+				&.blends {
+					@include background(2016, '02', banner_blends, jpg, 0, 0, no-repeat);
+				}	
 			}
 
 			.blends {
@@ -275,6 +295,32 @@ body {
 						}
 					}
 				}
+			}
+
+			.blends_carousel {
+				height: 320px;
+				padding-top: 30px;
+
+				h2 {
+					font-size: 2.5em;
+				}
+
+				h3 {
+					text-transform: uppercase;
+
+					a {
+						color: $main-color;
+					}
+				}
+
+				&.history {
+					@include background(2016, '01', slide_dickens, jpg, 0, 0, no-repeat);
+				}
+			}
+
+			.blend_suggest {
+				@include background(2016, '02', bgd_coffee_stain, jpg, 90%, 0, no-repeat);
+				padding: 40px 30px 45px;
 			}
 
 			.rev_slider_wrapper {

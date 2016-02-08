@@ -18,15 +18,16 @@ h1, h2, h3, h4, h5, h6 {
   color: #E5DBB9;
   font-weight: 300; }
 
+h1 {
+  font-size: 4em; }
+
 h3 {
   font-size: 1.3em; }
 
 body {
-  background-color: #E5DBB9;
-  background-image: radial-gradient(closest-side, transparent 98%, #e1d5ae 99%), radial-gradient(closest-side, transparent 98%, #e1d5ae 99%);
-  background-size: 80px 80px;
-  background-position: 0 0, 40px 40px;
-  background-repeat: repeat; }
+  background-image: none; }
+  body.page-template-onecolumn-page #page_banner {
+    margin-bottom: 40px; }
   body #wrap {
     position: relative; }
     body #wrap #header {
@@ -93,6 +94,10 @@ body {
               content: ''; }
     body #wrap #content {
       margin-top: -15px; }
+      body #wrap #content .entry-title {
+        display: none; }
+      body #wrap #content .entry-content {
+        background-color: #E5DBB9; }
       body #wrap #content #page_banner {
         min-height: 262px;
         padding: 100px 250px 0; }
@@ -101,6 +106,10 @@ body {
           text-shadow: 1px 1px #8D242C; }
         body #wrap #content #page_banner.home {
           background: url("/Galveston_Island/wp-content/uploads/2016/01/banner_home.jpg") 0 0 no-repeat; }
+        body #wrap #content #page_banner.history {
+          background: url("/Galveston_Island/wp-content/uploads/2016/01/banner_history.jpg") 0 0 no-repeat; }
+        body #wrap #content #page_banner.blends {
+          background: url("/Galveston_Island/wp-content/uploads/2016/02/banner_blends.jpg") 0 0 no-repeat; }
       body #wrap #content .blends {
         background: url("/Galveston_Island/wp-content/uploads/2016/01/bgd_blends.png") 0 0 no-repeat;
         margin-top: -20px; }
@@ -143,6 +152,20 @@ body {
         body #wrap #content .blends .one_fourth.dickens .learn:hover {
           background-color: #8e0509;
           color: white; }
+      body #wrap #content .blends_carousel {
+        height: 320px;
+        padding-top: 30px; }
+        body #wrap #content .blends_carousel h2 {
+          font-size: 2.5em; }
+        body #wrap #content .blends_carousel h3 {
+          text-transform: uppercase; }
+          body #wrap #content .blends_carousel h3 a {
+            color: #E5DBB9; }
+        body #wrap #content .blends_carousel.history {
+          background: url("/Galveston_Island/wp-content/uploads/2016/01/slide_dickens.jpg") 0 0 no-repeat; }
+      body #wrap #content .blend_suggest {
+        background: url("/Galveston_Island/wp-content/uploads/2016/02/bgd_coffee_stain.jpg") 90% 0 no-repeat;
+        padding: 40px 30px 45px; }
       body #wrap #content .rev_slider_wrapper .rev-btn {
         background-color: transparent !important;
         border: 1px solid #E5DBB9 !important;
