@@ -299,6 +299,11 @@ if ( !function_exists( 'skeleton_content_wrap' ) )  {
 	$columns = apply_filters('skeleton_set_colwidth', $columns, 1);
 
 	echo '<a id="top"></a>';
+	if ( is_home() ) {
+  		echo('<div id="page_banner" class="recipes">
+			<h1 style="text-align: center;">OUR RECIPES</h1>
+			</div>');
+	}
 	echo '<div id="content" class="'.$columns.' columns">';
 
 	}

@@ -1,0 +1,75 @@
+********************************************************************************
+PACKAGE-LOG: 2016-02-11 20:44:17
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.1.4
+WORDPRESS:	4.4.2
+PHP INFO:	5.6.10 | SAPI: apache2handler
+SERVER:		Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.6.10 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 5000M (128M default) 
+MEMORY STACK: 31MB 
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   PHP(query limit - 100)
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Not Supported 
+TABLES: total:19 | filtered:0 | create:19 
+FILTERED: [] 
+SQL CREATED: 20160211_galvestonislandcoffee_56bcf29b2826e4121160211204411_database.sql 
+SQL FILE SIZE: 1.24MB (1304399) 
+SQL FILE TIME: 2016-02-11 20:44:17 
+SQL RUNTIME: 0.12 sec. 
+
+******************************************************************************** 
+ARCHIVE (ZIP): 
+******************************************************************************** 
+ARCHIVE DIR:  /Users/Rick/Documents/__Websites/Galveston_Island 
+ARCHIVE FILE: 20160211_galvestonislandcoffee_56bcf29b2826e4121160211204411_archive.zip 
+FILTERS: *ON* 
+DIRS:  /Users/Rick/Documents/__Websites/Galveston_Island/.git/objects/pack; 
+EXTS:  not set 
+---------------------------------------- 
+COMPRESSING 
+SIZE:	62.04MB 
+STATS:	Dirs 443 | Files 3,488 
+SQL ADDED: 20160211_galvestonislandcoffee_56bcf29b2826e4121160211204411_database.sql 
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 3931
+    [filename] => /Users/Rick/Documents/__Websites/Galveston_Island/wp-snapshots/tmp/20160211_galvestonislandcoffee_56bcf29b2826e4121160211204411_archive.zip
+    [comment] => 
+)
+ 
+COMPRESSION RESULT: '1' 
+COMPRESSED SIZE: 34.89MB 
+ARCHIVE RUNTIME: 9.07 sec. 
+MEMORY STACK: 33MB 
+
+******************************************************************************** 
+MAKE INSTALLER: 
+******************************************************************************** 
+Build Start 
+Build Finished 
+Preping for use 
+Template parsed with new data 
+Complete [/Users/Rick/Documents/__Websites/Galveston_Island/wp-snapshots/tmp/20160211_galvestonislandcoffee_56bcf29b2826e4121160211204411_installer.php] 
+Added to archive 
+
+******************************************************************************** 
+INTEGRITY CHECKS: 
+******************************************************************************** 
+SQL File: 1.24MB 
+Installer File: 318.91KB 
+Archive File: 34.89MB  
+
+********************************************************************************
+RECORD ID:[1]
+TOTAL PROCESS RUNTIME: 9.78 sec.
+PEAK PHP MEMORY USED: 35MB
+DONE PROCESSING => 20160211_galvestonislandcoffee 2016-02-11 20:44:26
+ 

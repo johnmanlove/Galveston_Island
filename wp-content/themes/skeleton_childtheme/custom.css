@@ -40,10 +40,10 @@ body {
           top: 0;
           z-index: 1000; }
     body #wrap #navigation {
-      background: url("/Galveston_Island/wp-content/uploads/2016/01/bgd_header.png") 0 0 no-repeat;
+      background: url("/wp-content/uploads/2016/01/bgd_header.png") 0 0 no-repeat;
       background-color: transparent;
       margin-bottom: 0;
-      min-height: 71px;
+      min-height: 57px;
       z-index: 900; }
       body #wrap #navigation ul {
         background: transparent;
@@ -92,32 +92,47 @@ body {
               color: #E5DBB9; }
             body #wrap #navigation ul li .sub-menu li a::before {
               content: ''; }
+    body #wrap #page_banner {
+      min-height: 262px;
+      padding: 100px 0 0; }
+      body #wrap #page_banner h3 {
+        margin-bottom: 20px;
+        text-shadow: 1px 1px #8D242C; }
+      body #wrap #page_banner.home {
+        background: url("/wp-content/uploads/2016/01/banner_home.jpg") 0 0 no-repeat;
+        padding: 100px 250px 0; }
+      body #wrap #page_banner.history {
+        background: url("/wp-content/uploads/2016/01/banner_history.jpg") 0 0 no-repeat; }
+      body #wrap #page_banner.blends, body #wrap #page_banner.shop, body #wrap #page_banner.contact, body #wrap #page_banner.recipes {
+        background: url("/wp-content/uploads/2016/02/banner_blends.jpg") 0 0 no-repeat !important; }
+      body #wrap #page_banner.mardigras {
+        background: url("/wp-content/uploads/2016/01/slider_mardisgras.jpg") 0 0 no-repeat; }
+      body #wrap #page_banner.island {
+        background: url("/wp-content/uploads/2016/01/slider_island.jpg") 0 0 no-repeat; }
+      body #wrap #page_banner.palace {
+        background: url("/wp-content/uploads/2016/01/slider_palace.jpg") 0 0 no-repeat; }
+      body #wrap #page_banner.dickens {
+        background: url("/wp-content/uploads/2016/01/slide_dickens.jpg") 0 0 no-repeat; }
+      body #wrap #page_banner.recipes {
+        margin: 0px auto;
+        visibility: visible !important;
+        width: 940px; }
     body #wrap #content {
       margin-top: -15px; }
       body #wrap #content .entry-title {
         display: none; }
       body #wrap #content .entry-content {
         background-color: #E5DBB9; }
-      body #wrap #content #page_banner {
-        min-height: 262px;
-        padding: 100px 250px 0; }
-        body #wrap #content #page_banner h3 {
-          margin-bottom: 20px;
-          text-shadow: 1px 1px #8D242C; }
-        body #wrap #content #page_banner.home {
-          background: url("/Galveston_Island/wp-content/uploads/2016/01/banner_home.jpg") 0 0 no-repeat; }
-        body #wrap #content #page_banner.history {
-          background: url("/Galveston_Island/wp-content/uploads/2016/01/banner_history.jpg") 0 0 no-repeat; }
-        body #wrap #content #page_banner.blends {
-          background: url("/Galveston_Island/wp-content/uploads/2016/02/banner_blends.jpg") 0 0 no-repeat; }
       body #wrap #content .blends {
-        background: url("/Galveston_Island/wp-content/uploads/2016/01/bgd_blends.png") 0 0 no-repeat;
+        background: url("/wp-content/uploads/2016/01/bgd_blends.png") 0 0 no-repeat;
         margin-top: -20px; }
         body #wrap #content .blends .one_fourth h3,
         body #wrap #content .blends .one_fourth a.learn {
           font-weight: 600;
           text-decoration: none;
           text-transform: uppercase; }
+        body #wrap #content .blends .one_fourth .blend-desc {
+          min-height: 100px; }
         body #wrap #content .blends .one_fourth .learn {
           border: 1px solid;
           padding: 10px 15px;
@@ -162,10 +177,25 @@ body {
           body #wrap #content .blends_carousel h3 a {
             color: #E5DBB9; }
         body #wrap #content .blends_carousel.history {
-          background: url("/Galveston_Island/wp-content/uploads/2016/01/slide_dickens.jpg") 0 0 no-repeat; }
+          background: url("/wp-content/uploads/2016/01/slide_dickens.jpg") 0 0 no-repeat; }
+        body #wrap #content .blends_carousel.mardigras {
+          background: url("/wp-content/uploads/2016/01/slider_mardisgras.jpg") 0 0 no-repeat; }
+        body #wrap #content .blends_carousel.island {
+          background: url("/wp-content/uploads/2016/01/slider_island.jpg") 0 0 no-repeat; }
+        body #wrap #content .blends_carousel.palace {
+          background: url("/wp-content/uploads/2016/01/slider_palace.jpg") 0 0 no-repeat; }
+        body #wrap #content .blends_carousel.dickens {
+          background: url("/wp-content/uploads/2016/01/slide_dickens.jpg") 0 0 no-repeat; }
       body #wrap #content .blend_suggest {
-        background: url("/Galveston_Island/wp-content/uploads/2016/02/bgd_coffee_stain.jpg") 90% 0 no-repeat;
+        background: url("/wp-content/uploads/2016/02/bgd_coffee_stain.jpg") 90% 0 no-repeat;
         padding: 40px 30px 45px; }
+      body #wrap #content .bottom_image {
+        height: 500px;
+        margin-bottom: -60px;
+        position: relative;
+        width: 500px; }
+        body #wrap #content .bottom_image .coffee_bottom_img {
+          position: absolute; }
       body #wrap #content .rev_slider_wrapper .rev-btn {
         background-color: transparent !important;
         border: 1px solid #E5DBB9 !important;
@@ -175,6 +205,42 @@ body {
           background-color: #E5DBB9 !important; }
       body #wrap #content .rev_slider_wrapper .coffee-bag {
         width: 230px; }
+      body #wrap #content.eleven {
+        margin-top: 30px; }
+    body #wrap #sidebar.five {
+      margin-top: 30px; }
+    body #wrap #contact_form {
+      padding: 0px 100px; }
+      body #wrap #contact_form form .required {
+        color: #8D242C;
+        font-weight: 600; }
+      body #wrap #contact_form form input[type="text"],
+      body #wrap #contact_form form input[type="email"],
+      body #wrap #contact_form form textarea {
+        border: 1px solid #8D242C;
+        border-radius: 0;
+        height: auto;
+        line-height: 20px;
+        padding: 10px 20px;
+        transition: all .3s; }
+        body #wrap #contact_form form input[type="text"]:active, body #wrap #contact_form form input[type="text"]:focus,
+        body #wrap #contact_form form input[type="email"]:active,
+        body #wrap #contact_form form input[type="email"]:focus,
+        body #wrap #contact_form form textarea:active,
+        body #wrap #contact_form form textarea:focus {
+          box-shadow: 0 0 5px #8D242C; }
+      body #wrap #contact_form form input[type="text"],
+      body #wrap #contact_form form input[type="email"] {
+        width: 100%; }
+      body #wrap #contact_form form input[type="submit"] {
+        background: #8D242C;
+        border-radius: 0;
+        padding: 15px 0 !important;
+        text-shadow: 1px 1px #990000;
+        transition: all .3s;
+        width: 100%; }
+        body #wrap #contact_form form input[type="submit"]:hover {
+          background-color: #660000; }
     body #wrap #nav-below {
       display: none; }
     body #wrap .instagram-icon {
@@ -184,8 +250,10 @@ body {
       background-color: #E5DBB9;
       margin-bottom: 0;
       padding-bottom: 0 !important; }
+  body html#ecwid_html body#ecwid_body.chameleon .ecwid a, body html#ecwid_html body#ecwid_body.chameleon .ecwid a:active, body html#ecwid_html body#ecwid_body.chameleon .ecwid a:visited {
+    color: #8D242C !important; }
   body #footer {
-    background: url("/Galveston_Island/wp-content/uploads/2016/01/bgd_footer.jpg") 0 0 no-repeat;
+    background: url("/wp-content/uploads/2016/01/bgd_footer.jpg") 0 0 no-repeat;
     border-top: 0 none;
     margin: 0 10px;
     padding: 50px 30px 0; }

@@ -11,7 +11,7 @@ $primary-font: Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'T
 
 
 @mixin background($year, $month, $img-name, $img-type, $pos-x, $pos-y, $repeat) {
-	background: url('/Galveston_Island/wp-content/uploads/' + $year + '/' + $month + '/' + $img-name + '.' + $img-type + '') $pos-x $pos-y $repeat;
+	background: url('/wp-content/uploads/' + $year + '/' + $month + '/' + $img-name + '.' + $img-type + '') $pos-x $pos-y $repeat;
 }
 
 @mixin blend-color($color) {
@@ -101,7 +101,7 @@ body {
 			@include background(2016, '01', bgd_header, png, 0, 0, no-repeat);
 			background-color: transparent;
 			margin-bottom: 0;
-			min-height: 71px;
+			min-height: 57px;
 			z-index: 900;
 
 			ul {
@@ -196,6 +196,54 @@ body {
 			}
 		}
 
+		#page_banner {
+				min-height: 262px;
+				padding: 100px 0 0;
+
+				h3 {
+					margin-bottom: 20px;
+					text-shadow: 1px 1px $red-color;
+				}
+
+				&.home {
+					@include background(2016, '01', banner_home, jpg, 0, 0, no-repeat);
+					padding: 100px 250px 0;
+				}
+
+				&.history {
+					@include background(2016, '01', banner_history, jpg, 0, 0, no-repeat);
+				}
+
+				&.blends,
+				&.shop,
+				&.contact,
+				&.recipes {
+					@include background(2016, '02', banner_blends, jpg, 0, 0, no-repeat !important);
+				}
+
+				&.mardigras {
+					@include background(2016, '01', slider_mardisgras, jpg, 0, 0, no-repeat);
+				}
+
+				&.island {
+					@include background(2016, '01', slider_island, jpg, 0, 0, no-repeat);
+				}
+
+				&.palace {
+					@include background(2016, '01', slider_palace, jpg, 0, 0, no-repeat);
+				}
+
+				&.dickens {
+					@include background(2016, '01', slide_dickens, jpg, 0, 0, no-repeat);
+				}
+
+				&.recipes {
+					margin: 0px auto;
+					visibility: visible !important;
+					width: 940px;
+				}
+			}
+
 		#content {
 			margin-top: -15px;
 			@extend %clearfix;
@@ -206,28 +254,6 @@ body {
 
 			.entry-content {
 				background-color: $main-color;
-			}
-
-			#page_banner {
-				min-height: 262px;
-				padding: 100px 250px 0;
-
-				h3 {
-					margin-bottom: 20px;
-					text-shadow: 1px 1px $red-color;
-				}
-
-				&.home {
-					@include background(2016, '01', banner_home, jpg, 0, 0, no-repeat);
-				}
-
-				&.history {
-					@include background(2016, '01', banner_history, jpg, 0, 0, no-repeat);
-				}
-
-				&.blends {
-					@include background(2016, '02', banner_blends, jpg, 0, 0, no-repeat);
-				}	
 			}
 
 			.blends {
@@ -241,6 +267,10 @@ body {
 						font-weight: 600;
 						text-decoration: none;
 						text-transform: uppercase;
+					}
+
+					.blend-desc {
+						min-height: 100px;
 					}
 
 					.learn {
@@ -316,11 +346,38 @@ body {
 				&.history {
 					@include background(2016, '01', slide_dickens, jpg, 0, 0, no-repeat);
 				}
+
+				&.mardigras {
+					@include background(2016, '01', slider_mardisgras, jpg, 0, 0, no-repeat);
+				}
+
+				&.island {
+					@include background(2016, '01', slider_island, jpg, 0, 0, no-repeat);
+				}
+
+				&.palace {
+					@include background(2016, '01', slider_palace, jpg, 0, 0, no-repeat);
+				}
+
+				&.dickens {
+					@include background(2016, '01', slide_dickens, jpg, 0, 0, no-repeat);
+				}
 			}
 
 			.blend_suggest {
 				@include background(2016, '02', bgd_coffee_stain, jpg, 90%, 0, no-repeat);
 				padding: 40px 30px 45px;
+			}
+
+			.bottom_image {
+				height: 500px;
+				margin-bottom: -60px;
+				position: relative;
+				width: 500px;
+
+				.coffee_bottom_img {
+					position: absolute;
+				}
 			}
 
 			.rev_slider_wrapper {
@@ -340,6 +397,63 @@ body {
 					width: 230px;
 				}
 			}
+
+			&.eleven {
+				margin-top: 30px;
+			}
+		}
+
+		#sidebar {
+
+			&.five {
+				margin-top: 30px;
+			}
+		}
+
+		#contact_form {
+			padding: 0px 100px;
+
+			form {
+
+				.required {
+					color: $red-color;
+					font-weight: 600;
+				}
+
+				input[type="text"],
+				input[type="email"],
+				textarea {
+					border: 1px solid $red-color;
+					border-radius: 0;
+					height: auto;
+					line-height: 20px;
+					padding: 10px 20px;
+					transition: all .3s;
+
+					&:active,
+					&:focus {
+						box-shadow: 0 0 5px $red-color;
+					}
+				}
+
+				input[type="text"],
+				input[type="email"] {
+					width: 100%;
+				}
+
+				input[type="submit"] {
+					background: $red-color;
+					border-radius: 0;
+					padding: 15px 0 !important;
+					text-shadow: 1px 1px darken(red, 20%);
+					transition: all .3s;
+					width: 100%;
+
+					&:hover {
+						background-color: darken(red, 30%);
+					}
+				}
+			}
 		}
 
 		#nav-below {
@@ -357,6 +471,11 @@ body {
 			margin-bottom: 0;
 			padding-bottom: 0 !important;
 		}
+	}
+
+	html#ecwid_html body#ecwid_body.chameleon .ecwid a, html#ecwid_html body#ecwid_body.chameleon .ecwid a:active, html#ecwid_html body#ecwid_body.chameleon .ecwid a:visited {
+
+			color: $red-color !important;
 	}
 
 	#footer {

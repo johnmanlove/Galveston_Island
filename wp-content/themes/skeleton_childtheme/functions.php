@@ -76,6 +76,32 @@ if ( !function_exists( 'skeleton_main_menu' ) ) {
  add_filter('skeleton_author_credits','my_custom_creditlink');
 
  /*-----------------------------------------------------------------------------------*/
+// Content Wrap Markup - skeleton_content_wrap()
+// Be sure to add the excess of 16 to skeleton_before_sidebar() as well
+/*-----------------------------------------------------------------------------------*/
+
+
+if ( !function_exists( 'skeleton_content_wrap' ) )  {
+
+	function skeleton_content_wrap() {
+
+	$columns = '';
+	$columns = apply_filters('skeleton_set_colwidth', $columns, 1);
+
+	echo '<a id="top"></a>';
+	if ( is_home() ) {
+  		echo('<div id="page_banner" class="recipes clear">
+			<h1 style="text-align: center;">OUR RECIPES</h1>
+			</div>');
+	}
+	echo '<div id="content" class="'.$columns.' columns">';
+
+	}
+	add_action( 'skeleton_before_content', 'skeleton_content_wrap', 1 );
+
+}
+
+ /*-----------------------------------------------------------------------------------*/
 /* Before Footer
 /*-----------------------------------------------------------------------------------*/
 
